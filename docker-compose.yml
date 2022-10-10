@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  ehu-webc:
+    container_name: CIS${MODULE_CODE}
+    ports:
+      - '${MODULE_CODE}:8888'
+    volumes:
+      - ./CIS${MODULE_CODE}:/home/ehu/CIS${MODULE_CODE}-${YEAR}
+    image: walshd/ehucis${MODULE_CODE}
