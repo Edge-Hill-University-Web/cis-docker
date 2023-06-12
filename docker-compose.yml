@@ -5,5 +5,5 @@ services:
     ports:
       - '${MODULE_CODE}:8888'
     volumes:
-      - ./CIS${MODULE_CODE}:/home/ehu/CIS${MODULE_CODE}-${YEAR}
+      - ./CIS${MODULE_CODE}:/home/ehu/CIS${MODULE_CODE}
     image: walshd/ehucis${MODULE_CODE}
